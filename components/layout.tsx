@@ -1,9 +1,11 @@
 import { Box } from "@chakra-ui/layout";
+import Sidebar from "./sidebar";
 
-const PlayerLayout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <Box width="100vw" height="100vh">
       <Box position="absolute" top="0" width="250px" left="0">
+        <Sidebar />
         sidebar / navigation/ playlists etc
       </Box>
       <Box marginLeft="250px">{children}</Box>
@@ -14,4 +16,4 @@ const PlayerLayout = ({ children }) => {
   );
 };
 
-export default PlayerLayout;
+export default Layout;
